@@ -1,3 +1,9 @@
+"""
+Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. 
+The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:
+"""
+
 def remove_duplicates(nums) -> int:
     if not nums:
         return 0
@@ -11,7 +17,6 @@ def remove_duplicates(nums) -> int:
 
     return unique + 1
 
-# Example usage:
 nums = [1, 1, 2, 2, 2, 3, 4, 4, 5]
 unique_count = remove_duplicates(nums)
 print(unique_count)
